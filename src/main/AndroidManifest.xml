@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wish.base.module">
+
+    <application>
+        <provider
+            android:name=".internal.ModuleInstaller"
+            android:authorities="${applicationId}.base-module-installer"
+            android:exported="false" />
+    </application>
+</manifest>
