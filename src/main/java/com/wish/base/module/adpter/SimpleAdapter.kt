@@ -50,7 +50,7 @@ class SimpleAdapter : RecyclerView.Adapter<BaseItemModule.BaseViewHolder>() {
 
     override fun onViewRecycled(holder: BaseItemModule.BaseViewHolder) {
         super.onViewRecycled(holder)
-        dataList[holder.bindingAdapterPosition].viewRecycled(holder)
+        dataList[holder.layoutPosition].viewRecycled(holder)
     }
 
     override fun onViewAttachedToWindow(holder: BaseItemModule.BaseViewHolder) {
@@ -60,7 +60,7 @@ class SimpleAdapter : RecyclerView.Adapter<BaseItemModule.BaseViewHolder>() {
 
     override fun onViewDetachedFromWindow(holder: BaseItemModule.BaseViewHolder) {
         super.onViewDetachedFromWindow(holder)
-        dataList[holder.bindingAdapterPosition].viewDetachedFromWindow(holder)
+        dataList[holder.layoutPosition].viewDetachedFromWindow(holder)
     }
 
     override fun getItemCount(): Int = dataList.size

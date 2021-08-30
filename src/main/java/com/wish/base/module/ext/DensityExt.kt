@@ -38,48 +38,48 @@ fun getStatusBarHeight(): Int {
 /**
  * dp转换成px *
  */
-val Float.dp: Int
+val Float.dp: Float
     get() {
         return TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP,
             this,
             Resources.getSystem().displayMetrics
-        ).toInt()
+        )
     }
 
 /**
  * dp转换成px *
  */
-val Int.dp: Int
+val Int.dp: Float
     get() {
         return TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_DIP,
             this.toFloat(),
             Resources.getSystem().displayMetrics
-        ).toInt()
+        )
     }
 
 
 /**
  * sp转换成px *
  */
-val Float.sp: Int
+val Float.sp: Float
     get() {
         return TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_SP,
             this,
             Resources.getSystem().displayMetrics
-        ).toInt()
+        )
     }
 
 /**
  * sp转换成px *
  */
-val Int.sp: Int
+val Int.sp: Float
     get() {
         return TypedValue.applyDimension(
             TypedValue.COMPLEX_UNIT_SP,
             this.toFloat(),
             Resources.getSystem().displayMetrics
-        ).toInt()
+        )
     }
